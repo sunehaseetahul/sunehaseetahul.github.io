@@ -15,7 +15,7 @@
 
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="mark">S</span>Suneha Seetahul</a>
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Suneha Seetahul</a>
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
@@ -29,23 +29,20 @@
 </header>
 
 <main id="main">
-  <div class="wrap hero">
-    <div>
-      <h1 class="display">I study how gender norms, policies and institutions shape inequalities in health, nutrition and work.</h1>
-      <p class="intro"><strong>Senior Research Fellow, Australian Centre for Gender Equality and Inclusion at Work, University of Sydney.</strong> I am an applied microeconomist with over ten years of research and policy experience. I link survey, administrative and geospatial data to measure inequalities that are hard to see, trace the social conditions that produce them, and generate evidence that governments and international organisations can act on.</p>
-      <div class="actions">
-        <a class="btn solid" href="research.html">Explore my research</a>
-        <a class="btn" href="publications.html">Publications</a>
-        <a class="btn" href="mailto:suneha.seetahul@sydney.edu.au">Get in touch</a>
-      </div>
-    </div>
-    <figure class="portrait" style="margin:0">
+  <div class="wrap bio">
+    <figure class="portrait">
       <div class="frame">
         <span class="fallback" aria-hidden="true">SS</span>
-        <img src="photo.jpg" alt="Portrait of Suneha Seetahul" onerror="this.remove()" style="position:relative">
+        <img src="photo.jpg" alt="Portrait of Suneha Seetahul" onerror="this.remove()">
       </div>
-      <figcaption class="tag"><b>Gender Equality @ Work Index</b>Launched at Parliament House, Canberra, 2025</figcaption>
     </figure>
+    <div class="bio-text">
+      <h1>Suneha Seetahul</h1>
+      <p class="role">Senior Research Fellow, Australian Centre for Gender Equality and Inclusion at Work<br>University of Sydney Business School</p>
+      <p>I am an applied microeconomist working mainly on gender inequality in labour markets, health and development. In my research, I investigate how gender inequality, income inequality and living conditions shape outcomes at work and in health, from job quality and pay to obesity, malnutrition and food security. Linking survey, administrative and geospatial data allows me to measure these inequalities precisely and to understand the gender norms and institutions that produce and sustain them, so that policy can act on the evidence.</p>
+      <p>At the Australian Centre for Gender Equality and Inclusion at Work, I lead the quantitative development of the Gender Equality @ Work Index, which tracks gender equality across seven dimensions of work in Australia and is used by government to evaluate policy. Alongside my academic work, I collaborate closely with international organisations such as the World Bank and UN Women, through joint research and consulting, including on social protection in Sierra Leone and Indonesia. I hold a PhD in Economics from the University of Bordeaux.</p>
+      <p class="bio-links"><a href="mailto:suneha.seetahul@sydney.edu.au">suneha.seetahul@sydney.edu.au</a><a href="cv.pdf">CV</a><a href="https://orcid.org/0000-0003-4393-0550">ORCID</a><a href="https://profiles.sydney.edu.au/suneha.seetahul/">University profile</a></p>
+    </div>
   </div>
 
   <section class="block" id="map" aria-labelledby="map-title">
@@ -53,14 +50,14 @@
       <div class="map-head">
         <div>
           <h2 class="section-title" id="map-title">Research across five continents</h2>
-          <p class="lede">From household surveys in rural India to national indices in Australia, my work follows how inequality takes shape in different places. Choose a theme, or select a place to see the work behind it.</p>
+          <p class="lede">Across my research and policy work, I have studied many countries and regions. Choose a theme, or select a place to see the work behind it.</p>
         </div>
       </div>
       <div class="filters" role="group" aria-label="Filter places by research theme">
-        <button type="button" class="t-health" data-theme="health" aria-pressed="false"><span class="theme-dot"></span>Health and nutrition</button>
-        <button type="button" class="t-norms" data-theme="norms" aria-pressed="false"><span class="theme-dot"></span>Gender norms</button>
-        <button type="button" class="t-work" data-theme="work" aria-pressed="false"><span class="theme-dot"></span>Gender equality at work</button>
-        <button type="button" class="t-protection" data-theme="protection" aria-pressed="false"><span class="theme-dot"></span>Social protection</button>
+        <button type="button" class="t-work" data-theme="work" aria-pressed="false"><span class="theme-dot"></span>Labour markets and decent work</button>
+        <button type="button" class="t-health" data-theme="health" aria-pressed="false"><span class="theme-dot"></span>Health, nutrition and wellbeing</button>
+        <button type="button" class="t-norms" data-theme="norms" aria-pressed="false"><span class="theme-dot"></span>Gender norms and behaviour</button>
+        <button type="button" class="t-protection" data-theme="protection" aria-pressed="false"><span class="theme-dot"></span>Social protection and development</button>
       </div>
       <div class="map-wrap">
         <svg class="map" id="worldmap" viewBox="0 0 1000 440" role="img" aria-label="World map showing the places covered by Suneha Seetahul's research">
@@ -80,15 +77,24 @@
   </section>
 
   <section class="block" aria-labelledby="themes-title">
-    <div class="wrap">
-      <h2 class="section-title" id="themes-title">Four connected themes</h2>
-      <p class="lede">The common thread is measurement: making unequal outcomes visible, and identifying the norms and institutions that sustain them.</p>
-      <div class="themes">
-        <a class="theme t-health" href="research.html#health"><span class="bar"></span><div><h3>Health, nutrition and wellbeing</h3><p>Social determinants of obesity and malnutrition, food and nutrition security, and the health and safety of women at work.</p></div></a>
-        <a class="theme t-norms" href="research.html#norms"><span class="bar"></span><div><h3>Gender norms and behaviour</h3><p>How parental leave design, social identity and climate shocks shift attitudes, preferences and choices.</p></div></a>
-        <a class="theme t-work" href="research.html#work"><span class="bar"></span><div><h3>Measuring gender equality at work</h3><p>The Gender Equality @ Work Index and evidence that makes labour market inequality visible to policy.</p></div></a>
-        <a class="theme t-protection" href="research.html#protection"><span class="bar"></span><div><h3>Social protection and development</h3><p>Cash transfers, public works and program targeting for households facing poverty and shocks.</p></div></a>
+    <div class="wrap venn-block">
+      <div class="venn-intro">
+        <h2 class="section-title" id="themes-title">Four connected themes</h2>
+        <p class="lede">My work sits where these four areas overlap. What connects them is gender inequality, and how to measure it well enough for policy to act on it.</p>
+        <ul class="venn-list">
+          <li><a class="t-work" href="research.html#work" data-venn="work"><span class="theme-dot"></span><span><b>Gender equality in labour markets and decent work</b>The Gender Equality @ Work Index, pay, job quality and women's working conditions.</span></a></li>
+          <li><a class="t-health" href="research.html#health" data-venn="health"><span class="theme-dot"></span><span><b>Health, nutrition and wellbeing</b>Social determinants of obesity and malnutrition, food and nutrition security, and health and safety at work.</span></a></li>
+          <li><a class="t-norms" href="research.html#norms" data-venn="norms"><span class="theme-dot"></span><span><b>Gender norms and behaviour</b>How parental leave design, social identity and climate shocks shift attitudes and choices.</span></a></li>
+          <li><a class="t-protection" href="research.html#protection" data-venn="protection"><span class="theme-dot"></span><span><b>Social protection and development</b>Cash transfers, public works and targeting for households facing poverty and shocks.</span></a></li>
+        </ul>
       </div>
+      <svg class="venn" viewBox="0 0 520 470" role="img" aria-label="Diagram of four overlapping research themes with gender inequality at the centre">
+        <a href="research.html#work" class="vc t-work" data-venn="work"><circle cx="200" cy="180" r="128"/><text><tspan x="135" y="108">Labour markets</tspan><tspan x="135" dy="17">and decent work</tspan></text></a>
+        <a href="research.html#health" class="vc t-health" data-venn="health"><circle cx="320" cy="180" r="128"/><text><tspan x="385" y="108">Health, nutrition</tspan><tspan x="385" dy="17">and wellbeing</tspan></text></a>
+        <a href="research.html#norms" class="vc t-norms" data-venn="norms"><circle cx="200" cy="295" r="128"/><text><tspan x="135" y="362">Gender norms</tspan><tspan x="135" dy="17">and behaviour</tspan></text></a>
+        <a href="research.html#protection" class="vc t-protection" data-venn="protection"><circle cx="320" cy="295" r="128"/><text><tspan x="385" y="362">Social protection</tspan><tspan x="385" dy="17">and development</tspan></text></a>
+        <text class="venn-centre"><tspan x="260" y="232">Gender</tspan><tspan x="260" dy="18">inequality</tspan></text>
+      </svg>
     </div>
   </section>
 
@@ -98,7 +104,7 @@
       <div class="figures">
         <div><b>60+</b><span>countries covered by the data in my research</span></div>
         <div><b>10+</b><span>years across academic research and policy work</span></div>
-        <div><b>5</b><span>years at the World Bank in social protection and gender</span></div>
+        <div><b>5</b><span>years consulting for the World Bank on social protection and gender</span></div>
         <div><b>A$5m</b><span>Working for Women program, Office for Women, as co-investigator</span></div>
       </div>
     </div>
@@ -112,7 +118,7 @@
         <div><h3>Gender Equality @ Work Index</h3><p>Launched by the Assistant Minister for Women in 2025, used to evaluate the Building Women's Careers program and cited by the Office for Women.</p></div>
         <div><h3>World Bank</h3><p>Social Protection and Jobs Global Practice, Development Impact Evaluation and the Indonesia Country Office, 2021 to 2026. Africa Fellow with the Gender Group, 2021.</p></div>
         <div><h3>Australian Department of Foreign Affairs and Trade</h3><p>Gender and labour consultant for the Investing in Women initiative, with country reports produced with UN Women.</p></div>
-        <div><h3>International presentations</h3><p>International Labour Organization in Geneva, the Society for the Advancement of Socio-Economics, and Parliament House.</p></div>
+        <div><h3>Policy advisory work</h3><p>Evidence and advice for government and industry partners through the Australian Centre for Gender Equality and Inclusion at Work, including policy papers on women's work in NSW and research leadership for the University of Sydney's Gender Equality Plan.</p></div>
       </div>
     </div>
   </section>
@@ -132,7 +138,7 @@
 
 <script>
 (function () {
-  var NAMES = { health: "Health and nutrition", norms: "Gender norms", work: "Gender equality at work", protection: "Social protection" };
+  var NAMES = { work: "Labour markets and decent work", health: "Health, nutrition and wellbeing", norms: "Gender norms and behaviour", protection: "Social protection and development" };
   var places = [
     { id: "india", x: 715.2, y: 161.6, name: "India", themes: ["health", "norms"], label: "India", dx: -12, anchor: "end",
       text: "Gender inequality and obesity, women's rights and malnutrition, sex ratios and fertility preferences, and social identity and labour mobility in rural India. My PhD studied stigma by gender, religion and caste in the Indian labour market." },
@@ -227,6 +233,15 @@
   });
 
   show(places[0], places[0].node);
+
+  document.querySelectorAll("[data-venn]").forEach(function (a) {
+    var key = a.getAttribute("data-venn");
+    function on(v) { document.querySelectorAll('[data-venn="' + key + '"]').forEach(function (n) { n.classList.toggle("hot", v); }); }
+    a.addEventListener("mouseenter", function () { on(true); });
+    a.addEventListener("mouseleave", function () { on(false); });
+    a.addEventListener("focus", function () { on(true); });
+    a.addEventListener("blur", function () { on(false); });
+  });
 })();
 </script>
 </body>

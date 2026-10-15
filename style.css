@@ -57,9 +57,8 @@ header.site { padding-top: 26px; padding-bottom: 26px; }
 header.site .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; font-weight: 600; }
 .brand .mark {
-  width: 34px; height: 34px; border-radius: 50%;
-  display: grid; place-items: center;
-  font: 500 1rem/1 var(--serif); color: var(--paper); background: var(--ink);
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 3px solid var(--link); background: transparent; flex: none;
 }
 nav.main ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; flex-wrap: wrap; }
 nav.main a {
@@ -116,6 +115,17 @@ section.block + section.block { border-top: 1px solid var(--rule); }
 }
 .portrait .tag b { display: block; font-weight: 600; }
 
+/* Bio (home) */
+.bio { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 48px; align-items: start; padding-top: 32px; padding-bottom: 56px; }
+.bio .portrait { margin: 0; max-width: 240px; justify-self: start; }
+.bio .portrait .frame { border-radius: 120px 120px 14px 14px; }
+.bio .portrait .fallback { font-size: 3.6rem; }
+.bio h1 { font: 500 2rem/1.15 var(--serif); letter-spacing: -0.01em; }
+.bio .role { color: var(--slate); margin: 8px 0 22px; font-size: 0.98rem; line-height: 1.5; }
+.bio-text { max-width: 64ch; }
+.bio-text p { margin: 0 0 14px; }
+.bio-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px !important; font-size: 0.95rem; }
+
 /* Theme keys */
 .theme-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
 .t-health { --c: var(--health); }
@@ -169,6 +179,19 @@ section.block + section.block { border-top: 1px solid var(--rule); }
 .themes a.theme h3 { font: 500 1.3rem/1.25 var(--serif); }
 .themes a.theme p { margin: 6px 0 0; color: var(--slate); font-size: 0.97rem; }
 .themes a.theme:hover h3 { color: var(--c); }
+
+/* Venn (home) */
+.venn-block { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.venn-list { list-style: none; margin: 28px 0 0; padding: 0; }
+.venn-list a { display: grid; grid-template-columns: 10px 1fr; gap: 14px; align-items: baseline; padding: 14px 0; border-top: 1px solid var(--rule); text-decoration: none; color: var(--slate); font-size: 0.95rem; }
+.venn-list a b { display: block; color: var(--ink); font-weight: 500; font-size: 1.02rem; margin-bottom: 2px; }
+.venn-list a.hot b, .venn-list a:hover b { color: var(--c); }
+.venn { width: 100%; height: auto; display: block; overflow: visible; }
+.venn .vc circle { fill: var(--c); fill-opacity: .13; stroke: var(--c); stroke-width: 2; transition: fill-opacity .25s; }
+.venn .vc.hot circle, .venn .vc:hover circle, .venn .vc:focus-visible circle { fill-opacity: .3; }
+.venn .vc:focus-visible { outline: none; }
+.venn .vc text { font: 600 14px var(--sans); fill: var(--ink); text-anchor: middle; }
+.venn .venn-centre { font: 500 17px var(--serif); fill: var(--ink); text-anchor: middle; }
 
 /* Figures strip */
 .figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; margin-top: 36px; }
@@ -243,6 +266,10 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 18
   .hero { grid-template-columns: 1fr; gap: 40px; }
   .portrait { justify-self: start; max-width: 300px; }
   .rtheme { grid-template-columns: 1fr; gap: 20px; }
+  .bio { grid-template-columns: 1fr; gap: 28px; }
+  .venn-block { grid-template-columns: 1fr; gap: 24px; }
+  .venn { max-width: 440px; margin: 0 auto; }
+  .bio .portrait { max-width: 180px; }
   .rtheme .side { position: static; }
   .themes, .impact { grid-template-columns: 1fr; }
   .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
