@@ -77,24 +77,15 @@
   </section>
 
   <section class="block" aria-labelledby="themes-title">
-    <div class="wrap venn-block">
-      <div class="venn-intro">
-        <h2 class="section-title" id="themes-title">Four connected themes</h2>
-        <p class="lede">My work sits where these four areas overlap. What connects them is gender inequality, and how to measure it well enough for policy to act on it.</p>
-        <ul class="venn-list">
-          <li><a class="t-work" href="research.html#work" data-venn="work"><span class="theme-dot"></span><span><b>Gender equality in labour markets and decent work</b>The Gender Equality @ Work Index, pay, job quality and women's working conditions.</span></a></li>
-          <li><a class="t-health" href="research.html#health" data-venn="health"><span class="theme-dot"></span><span><b>Health, nutrition and wellbeing</b>Social determinants of obesity and malnutrition, food and nutrition security, and health and safety at work.</span></a></li>
-          <li><a class="t-norms" href="research.html#norms" data-venn="norms"><span class="theme-dot"></span><span><b>Gender norms and behaviour</b>How parental leave design, social identity and climate shocks shift attitudes and choices.</span></a></li>
-          <li><a class="t-protection" href="research.html#protection" data-venn="protection"><span class="theme-dot"></span><span><b>Social protection and development</b>Cash transfers, public works and targeting for households facing poverty and shocks.</span></a></li>
-        </ul>
+    <div class="wrap">
+      <h2 class="section-title" id="themes-title">Four connected themes</h2>
+      <p class="lede">My research studies inequalities in work, health and wellbeing, particularly gender inequalities: how they arise, what sustains them and how policy can address them.</p>
+      <div class="themes">
+        <a class="theme t-work" href="research.html#work"><span class="bar"></span><div><h3>Gender equality in labour markets and decent work</h3><p>The Gender Equality @ Work Index, pay, job quality and women's working conditions.</p></div></a>
+        <a class="theme t-health" href="research.html#health"><span class="bar"></span><div><h3>Health, nutrition and wellbeing</h3><p>Social determinants of obesity and malnutrition, food and nutrition security, and health and safety at work.</p></div></a>
+        <a class="theme t-norms" href="research.html#norms"><span class="bar"></span><div><h3>Gender norms and behaviour</h3><p>How parental leave design, social identity and climate shocks shift attitudes, preferences and choices.</p></div></a>
+        <a class="theme t-protection" href="research.html#protection"><span class="bar"></span><div><h3>Social protection and development</h3><p>Cash transfers, public works and program targeting for households facing poverty and shocks.</p></div></a>
       </div>
-      <svg class="venn" viewBox="0 0 520 470" role="img" aria-label="Diagram of four overlapping research themes with gender inequality at the centre">
-        <a href="research.html#work" class="vc t-work" data-venn="work"><circle cx="200" cy="180" r="128"/><text><tspan x="135" y="108">Labour markets</tspan><tspan x="135" dy="17">and decent work</tspan></text></a>
-        <a href="research.html#health" class="vc t-health" data-venn="health"><circle cx="320" cy="180" r="128"/><text><tspan x="385" y="108">Health, nutrition</tspan><tspan x="385" dy="17">and wellbeing</tspan></text></a>
-        <a href="research.html#norms" class="vc t-norms" data-venn="norms"><circle cx="200" cy="295" r="128"/><text><tspan x="135" y="362">Gender norms</tspan><tspan x="135" dy="17">and behaviour</tspan></text></a>
-        <a href="research.html#protection" class="vc t-protection" data-venn="protection"><circle cx="320" cy="295" r="128"/><text><tspan x="385" y="362">Social protection</tspan><tspan x="385" dy="17">and development</tspan></text></a>
-        <text class="venn-centre"><tspan x="260" y="232">Gender</tspan><tspan x="260" dy="18">inequality</tspan></text>
-      </svg>
     </div>
   </section>
 
@@ -234,14 +225,6 @@
 
   show(places[0], places[0].node);
 
-  document.querySelectorAll("[data-venn]").forEach(function (a) {
-    var key = a.getAttribute("data-venn");
-    function on(v) { document.querySelectorAll('[data-venn="' + key + '"]').forEach(function (n) { n.classList.toggle("hot", v); }); }
-    a.addEventListener("mouseenter", function () { on(true); });
-    a.addEventListener("mouseleave", function () { on(false); });
-    a.addEventListener("focus", function () { on(true); });
-    a.addEventListener("blur", function () { on(false); });
-  });
 })();
 </script>
 </body>
