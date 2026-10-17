@@ -187,7 +187,8 @@
     var g = group(e);
     return { article: 0, workingpaper: 0, books: 0, inprogress: 1, report: 2, commentary: 3, thesis: 3 }[g];
   }
-  function byYear(a, b) { return (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0); }
+  function yr(e) { return parseInt(e.year, 10) || (e.status ? 9999 : 0); }
+  function byYear(a, b) { return yr(b) - yr(a); }
 
   function render(entries) {
     document.querySelectorAll("[data-bib-group]").forEach(function (ol) {
@@ -202,7 +203,7 @@
     document.querySelectorAll("[data-bib-theme]").forEach(function (ul) {
       var t = ul.getAttribute("data-bib-theme");
       var list = entries.filter(function (e) { return (e.researchpage || "").trim() === t; });
-      list.sort(function (a, b) { return rank(a) - rank(b) || byYear(a, b); });
+      list.sort(function (a, b) { return byYear(a, b) || rank(a) - rank(b); });
       ul.innerHTML = "";
       list.forEach(function (e) { ul.appendChild(workItem(e)); });
     });
