@@ -236,6 +236,8 @@ ol.pubs .yr { color: var(--slate); font-variant-numeric: tabular-nums; font-size
 ol.pubs .title { font-weight: 500; }
 ol.pubs .meta { display: block; color: var(--slate); font-size: 0.93rem; }
 ol.pubs .venue { font-style: italic; }
+ol.pubs .rank { display: inline-block; margin-left: 4px; padding: 0 7px; border: 1px solid var(--rule); border-radius: 999px; font-size: 0.8rem; font-style: normal; white-space: nowrap; }
+.pub-note { color: var(--slate); font-size: 0.93rem; font-style: italic; margin: 0 0 8px; }
 ol.pubs .tdots { display: none; }
 .pub-filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
 
@@ -303,3 +305,4 @@ body::before { content: ""; display: block; height: 6px; background: linear-grad
 .themes a.theme.t-protection h3, .rtheme.t-protection h2 { color: var(--protection-text); }
 .themes a.theme:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
 section.block + section.block { border-top-color: var(--rule); }
+.tgrid .tlist + h2 { margin-top: 36px; }

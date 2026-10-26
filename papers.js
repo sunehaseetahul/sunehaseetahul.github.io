@@ -151,7 +151,11 @@
       meta.appendChild(document.createTextNode((e.school || "") + "."));
     } else {
       var rep = [e.institution, [e.reporttype, e.number].filter(Boolean).join(" ")].filter(Boolean).join(", ");
-      meta.appendChild(document.createTextNode(rep + "."));
+      meta.appendChild(document.createTextNode(rep + (e.status ? ". " + e.status : "") + "."));
+    }
+    if (e.rank) {
+      meta.appendChild(document.createTextNode(" "));
+      meta.appendChild(el("span", "rank", e.rank));
     }
     body.appendChild(meta);
     li.appendChild(body);
